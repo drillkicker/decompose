@@ -1,2 +1,1 @@
-# decompose
-Performs multiband granular waveset rearrangement on a stereo .wav file
+This script is inspired by Vincent Lostanlen's Synopsis Seriation paper.  It filters the .wav file into a defined number of frequency bands, performs wavelet scattering analysis on each band, divides each band into wavesets of a defined number of zero-crossings, then rearranges those wavesets based on nearest neighbor matching on 200-waveset clusters before finally recombining the frequency bands together into an output .wav file.  The result is a wide-stereo granular cloud that uses timbral elements from the input audio.
