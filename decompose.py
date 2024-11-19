@@ -279,10 +279,10 @@ def process_signal_by_band(signal, sr, band_info, grain_size, J=6, Q=12, method=
     #else:
     #    combined_signal = validate_and_normalize_signal(combined_signal)
 
-    # Debugging: Save combined signal
-    debug_combined_file = f"debug_combined_chunk_{chunk_idx}.wav"
-    sf.write(debug_combined_file, combined_signal, sr)
-    print(f"DEBUG: Saved debug combined output to {debug_combined_file}")
+    ## Debugging: Save combined signal
+    #debug_combined_file = f"debug_combined_chunk_{chunk_idx}.wav"
+    #sf.write(debug_combined_file, combined_signal, sr)
+    #print(f"DEBUG: Saved debug combined output to {debug_combined_file}")
 
     return combined_signal
 
